@@ -1,0 +1,25 @@
+Forgetting a semicolon at the end of a property declaration can break the style rule.
+.bad {
+  color: red
+  background-color: yellow;
+}
+#Using a property name that does not exist will simply be ignored by the browser.
+.bad {
+  colr: blue;
+  font-size: 16px;
+}
+#Correct properties but invalid values will also be ignored.
+.bad {
+  width: -100px;
+  color: green;
+}
+
+#forget to close a brace }
+.bad {
+  padding: 20px;
+  margin: 10px;
+  
+#Typos like extra colons or misplaced braces can cause rules to break.
+.bad {
+  color:: blue;
+}
