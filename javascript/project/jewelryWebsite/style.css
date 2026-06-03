@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fafafa;
+}
+
+header {
+  background: #b8860b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+}
+
+.filters {
+  width: 20%;
+  padding: 1rem;
+  background: #fff8dc;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  padding: 2rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  margin: 1rem;
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.discount {
+  background: #ff1493;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.cart-info p {
+  margin: 5px 0;
+}
+.cart-main {
+ display: flex;
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;  /* center vertically */
+  min-height: 60vh;         /* take up most of the viewport height */
+  text-align: center;       /* center text inside */
+}
+
+.cart-item-details {
+  align-self: center;
+  flex: 1;
+}
+#checkout-btn {
+  color: black;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  border-bottom: 1px solid #ddd;
+
+}
+
+footer {
+  background: #b8860b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

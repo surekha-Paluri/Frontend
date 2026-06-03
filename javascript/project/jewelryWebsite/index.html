@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rekha Jewellery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✨ Rekha Jewellery ✨</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">All Jewellery</a>
+      <a href="#">Daily Wear</a>
+      <a href="#">Occasion Wear</a>
+      <a href="#">Gifting</a>
+      <a href="cart.html">Cart 🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <aside class="filters">
+      <h3>Filter by Price</h3>
+      <input type="range" min="1000" max="20000" step="500" id="priceRange">
+      <p>Max Price: ₹<span id="priceValue">20000</span></p>
+
+      <h3>Base Colour</h3>
+      <select>
+        <option>Gold</option>
+        <option>Silver</option>
+        <option>Rose Gold</option>
+      </select>
+    </aside>
+
+    <section id="products" class="product-list"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rekha Jewellery</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

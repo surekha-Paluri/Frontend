@@ -13,6 +13,8 @@ function showMessage() {
 showMessage(); // Hello, John
 
 
+//function declaration
+
 function calcgrade(studentmarks,studentMaxmarks){
     let percentage=(studentmarks/studentMaxmarks)*100
     let grade;
@@ -34,3 +36,21 @@ function calcgrade(studentmarks,studentMaxmarks){
     console.log(grade);
 }
 calcgrade(85,100);
+
+//function expression
+
+let fun=function(a,b){
+    return a+b
+}
+console.log(fun(2,3));
+//arrow function
+let arrowFun=(a,b)=>{
+    return a+b
+}
+console.log(arrowFun(2,3));
+//immediately invoked function expression (IIFE)
+(function(){
+    console.log("This is an IIFE");
+})();
+
+

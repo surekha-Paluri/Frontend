@@ -91,3 +91,44 @@ console.log(fruits1); // Output: ["apple", "banana", "orange"]
 let scores= [90, 80, 70, 60, 50];
 scores.sort();
 console.log(scores); // Output: [50, 60, 70, 80, 90]
+//one dimensional array
+let oneDimensionalArray = [1, 2, 3, 4, 5];
+console.log(oneDimensionalArray); // Output: [1, 2, 3, 4, 5]
+//two dimensional array
+let twoDimensionalArray = [[1, 2], [3, 4], [5, 6]];
+console.log(twoDimensionalArray); // Output: [[1, 2], [3, 4], [5, 6]]
+//three dimensional array
+let threeDimensionalArray = 
+[
+    [
+    [1, 2],
+    [3, 4]
+    ], 
+    [
+    [5, 6], 
+     [7, 8]
+    ]
+];
+console.log(threeDimensionalArray); // Output: [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+
+//shallow copy of array->spread operator
+let originalArray = [1, 2, 3, 4, 5];
+let shallowCopy = [...originalArray];
+shallowCopy[0] = 10;
+console.log(originalArray); // Output: [1, 2, 3, 4, 5]
+console.log(shallowCopy); // Output: [10, 2, 3, 4, 5]
+
+//shallow copy of array->slice() method
+
+let originalArray = [1, 2, 3, 4, 5];
+let shallowCopy = originalArray.slice();
+shallowCopy.push(10);
+console.log(originalArray); // Output: [1, 2, 3, 4, 5]
+console.log(shallowCopy); // Output: [1, 2, 3, 4, 5, 10]
+
+//deep copy ->structuredClone() method
+let originalArray = [1, 2, 3, 4, 5];
+let deepCopy = structuredClone(originalArray);
+deepCopy.push(10);
+console.log(originalArray); // Output: [1, 2, 3, 4, 5]
+console.log(deepCopy); // Output: [1, 2, 3, 4, 5, 10]
